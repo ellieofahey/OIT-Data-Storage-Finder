@@ -95,10 +95,10 @@ html, body { margin:0; padding:0; font:1em/1.75 Verdana, Arial, Helvetica, sans-
 	} 
 
 .sidenav {
-    max-height: 800px;
+    max-height: 600px;
     text-align: left;
 	width: 30%;
-	position: absolute;
+	/* position: absolute; */
 	background-color: white;
 	overflow-x: auto;
     overflow-y: scroll;
