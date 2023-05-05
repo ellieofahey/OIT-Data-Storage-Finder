@@ -1,6 +1,4 @@
-
 html, body { margin:0; padding:0; font:1em/1.75 Verdana, Arial, Helvetica, sans-serif; -ms-text-size-adjust:100%; -webkit-text-size-adjust:100% }
-
 
 .logo {
 	height: auto;
@@ -10,41 +8,42 @@ html, body { margin:0; padding:0; font:1em/1.75 Verdana, Arial, Helvetica, sans-
 
 .logo-rec {
 	height: auto;
-	width: 30%;
+	width: 40%;
 	padding: 0;
 }
 
+/*
 .filter-categories span { 
 	display:inline-block; 
 	padding:0.25em 0; 
-	white-space:nowrap}
+	white-space:nowrap
+} 
+*/
+
+.filter-input {
+    color: black;
+}
 
 .filter-text, .filter-label { 
 	font-size:0.50em; 
-	white-space: normal; }
-
+	white-space: normal; 
+}
 .filter-label { 
 	margin-right:1em; 
 	padding:0.35em 0.5em; 
-	border-radius:0.25em }
-
-/* THE LITTLE BLOCKS ARE HERE */
-
+	border-radius:0.25em 
+}
 .filter-wrap { 
-	
-    display:-webkit-flexbox; 
+	display:-webkit-flexbox; 
 	display:-ms-flexbox; 
 	display:flex; 
-	flex-wrap: wrap; 
+	flex-wrap:wrap; 
 	position:relative; 
 	overflow:hidden; 
 	margin:1.5em -0.75% 2em; 
-	font-size:0.9375em;
-
-    }
-
+	font-size:0.9375em 
+}
 .filter-item { 
-
 	display:-webkit-flexbox; 
 	display:-ms-flexbox; 
 	display:flex; 
@@ -58,22 +57,16 @@ html, body { margin:0; padding:0; font:1em/1.75 Verdana, Arial, Helvetica, sans-
     border-radius: 10px;
 	text-align:center; 
 	background:#e1e2e3; 
-	color:#0e1347 }
-
+	color:#0e1347;
+    overflow-wrap: break-word;
+}
 .filter-item span { 
-
-	display:block; 
-	text-align:right; 
-	font-size:0.875em; 
-	color:#ccc; 
-	padding-right:5% }
-
-
-/* .info-not-sharing, .info-nd-sharing, .info-both-sharing { background: lightgoldenrodyellow} */
+	display:block; text-align:right; font-size:0.875em; color:#ccc; padding-right:5% 
+}
 
 .filtered-inclusive .filter-item, .filtered-exclusive .filter-item, .filter-no-item { display:none } /* filtered-inclusive/filtered-exclusive class applied via js */
 .filtered-inclusive .filter-item.selected, .filtered-exclusive .filter-item:not(.selected) { display:-webkit-flexbox; display:-ms-flexbox; display:flex } /* selected class applied via js */ 
-.filter-no-item.filter-no-item-active { display:block; width:100%; background:blue; color:blue; padding:1em 1.5em; margin:0.75% }
+.filter-no-item.filter-no-item-active { display:block; width:100%; background:#fcc; color:red; padding:1em 1.5em; margin:0.75% }
 .filter-mask-active { position:absolute; top:0; left:0; bottom:0; right:0; -webkit-animation:filterMask 1s ease-in-out both; animation:filterMask 1s ease-in-out both }
 
 @-webkit-keyframes filterMask { 
@@ -87,26 +80,40 @@ html, body { margin:0; padding:0; font:1em/1.75 Verdana, Arial, Helvetica, sans-
 	100% { background:transparent } 
 	}
 
-@media (max-width: 800px) {
-    .filter-wrap, .filter-item {
-        flex: 50%;
-        max-width: 100%;
-    }
-} 
-
-@media (max-width: 600px) {
-    .filter-wrap, .filter-item {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
 @media(min-width:40em) { 
 	.filter-text, .filter-label, .filter-wrap { font-size:0.875em }
 	.filter-item { width:29.75% }
 	}
 
+@media(min-width:56em) { 
+	.filter-text, .filter-label, .filter-wrap { font-size:1em } 
+	.filter-item { width:21.5% }
+	}
+
+@media(min-width:64em) {
+	.filter-item { margin:0.5em 0.75% }
+	} 
+
+.sidenav {
+    max-height: 800px;
+    text-align: left;
+	width: 30%;
+	position: absolute;
+	background-color: white;
+	overflow-x: auto;
+    overflow-y: scroll;
+}	
+
+.sidenav > h3 { text-align: center; }
+
 .main-area {
-	width: auto;
-    margin: 20px;
+	width: 90%;
+    margin-left: 33%;
+    margin-right: 5px;
+}
+
+.question > h6 {
+	text-align: center;
+	overflow-wrap: break-word;
+    font-style: italic;
 }
