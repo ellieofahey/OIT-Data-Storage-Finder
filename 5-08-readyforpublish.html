@@ -20,7 +20,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://site_url">
   <meta property="og:locale" content="en_US">
-  <title>Notre Dame Data Storage Finder | Site Name | University of Notre Dame</title>
+  <title>ND Data Storage Finder | University of Notre Dame</title>
   <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="https://static.nd.edu/images/monogram/monogram.svg" type="image/svg+xml">
@@ -28,7 +28,6 @@
   <meta name="theme-color" content="#002b5c">
   <link rel="stylesheet" type="text/css" href="https://conductor.nd.edu/stylesheets/themes/ndt/v3/ndt.css" />
   <link rel="stylesheet" href="./stylesheets/site.css">
-  <!--ELLIES CSS STYLE SHEET BELOW-->
   <link rel="stylesheet" href="readyforpublish.css">
 </head>
 <body vocab="https://schema.org/" class="nav-top-true full-width">
@@ -45,31 +44,9 @@
     <header id="header" class="site-header">
       <p class="mark-header"><a href="https://www.nd.edu/">University of Notre Dame</a></p>
       <div class="site-title-group">
-        <p id="site-title" class="site-title"><a href="/" accesskey="1" title="Homepage shortcut key = 1">Site Name</a></p>
-      </div>
-      <!-- Header Search/Nav  -->
-      <div class="nav-header">
-        <nav id="nav-top" class="nav-top" role="navigation" aria-label="Primary navigation">
-          <div id="primary">
-            <ul>
-              <li><a href="/" aria-label="Home"><svg class="icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-home"></use></svg></a></li>
-              <li><a class="active" href="#">Page A</a></li>
-              <li><a href="#">Page B</a></li>
-              <li><a href="#">Page C</a></li>
-              <li class="nav-search"><button class="btn-search search-toggle" aria-label="Toggle search"><svg class="icon" width="16" height="16"><use xlink:href="#icon-search"></use></svg></button></li>
-            </ul>
-            <div class="nav-search-wrapper">
-              <form method="get" action="/search/" id="search-nav-top" class="search-form" role="search" aria-label="Site search">
-                <input type="hidden" name="as_sitesearch" value="siteurl.nd.edu">
-                <input type="hidden" name="entqr" value="3">
-                <input type="search" name="q" class="search-input" id="search-input-nav-top" placeholder="Search this site" title="type your search term" aria-label="Site Search input">
-                <button class="search-button" type="submit" aria-label="Search"><svg class="icon" width="16" height="16" data-icon="search"><use xlink:href="#icon-search"></use></svg></button>
-                <button class="search-close search-toggle" aria-label="Close Search"><svg class="icon" width="16" height="16"><use xlink:href="#icon-close"></use></svg></button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </div>
+        <p id="site-title" class="site-title"><a href="/" accesskey="1" title="Homepage shortcut key = 1">ND Storage Finder</a></p>
+      </div> 
+
       <!-- Mobile Navbar -->
       <div class="nav-mobile-util">
         <ul class="no-bullets">
@@ -108,65 +85,85 @@
             
             <span class="filter-categories">
                 <span class="filter-text"></span> 
-            
-                <span><input type="checkbox" id="filter-all-2" class="filter-input filter-all" name="filter-2" checked /><label for="filter-all-2" class="filter-label">Clear Selections</label>
-                
+                <br>
+                <input type="checkbox" id="filter-all-2" class="filter-input filter-all" name="filter-2" checked /><label for="filter-all-2" class="filter-label">Clear Selections</label>
+                <br>
+
                 <div class="question"><h6>What is the classification of your data?</h6></div>
-                <input type="checkbox" id="public" class="filter-input" name="filter-2"/><label for="public" class="filter-label info-pub">Public</label>
-                <input type="checkbox" id="internal" class="filter-input" name="filter-2"/><label for="internal" class="filter-label info-int">Internal</label>
-                <input type="checkbox" id="sensitive" class="filter-input" name="filter-2"/><label for="sensitive" class="filter-label info-sens">Sensitive</label>
+                <br>
+                <input type="checkbox" id="public" class="filter-input" name="filter-2"/><label for="public" class="filter-label info-pub">Public</label><br>
+                <input type="checkbox" id="internal" class="filter-input" name="filter-2"/><label for="internal" class="filter-label info-int">Internal</label><br>
+                <input type="checkbox" id="sensitive" class="filter-input" name="filter-2"/><label for="sensitive" class="filter-label info-sens">Sensitive</label><br>
                 <input type="checkbox" id="hsi" class="filter-input" name="filter-2"/><label for="hsi" class="filter-label info-hsi">Highly Sensitive Information (HSI)</label>
-            
+                <br>
+                
                 <div class="question"><h6>How do you prefer to access your data?</h6></div>	
-                <span><input type="checkbox" id="browser-access" class="filter-input" name="filter-2"/><label for="browser-access" class="filter-label info-browser">Using a browser</label></span><br>
-                <span><input type="checkbox" id="drive-access" class="filter-input" name="filter-2"/><label for="drive-access" class="filter-label info-drive">As a (mapped) drive displaying folders</label></span><br>
-                <span><input type="checkbox" id="nopref-access" class="filter-input" name="filter-2"/><label for="nopref-access" class="filter-label info-nopref">No preference</label></span><br>
-            
+                <br>
+                <input type="checkbox" id="browser-access" class="filter-input" name="filter-2"/><label for="browser-access" class="filter-label info-browser">Using a browser</label><br>
+                <input type="checkbox" id="drive-access" class="filter-input" name="filter-2"/><label for="drive-access" class="filter-label info-drive">As a (mapped) drive displaying folders</label><br>
+                <input type="checkbox" id="nopref-access" class="filter-input" name="filter-2"/><label for="nopref-access" class="filter-label info-nopref">No preference</label><br>
+                <br>
+                
                 <div class="question"><h6>What regulatory compliance standards do you need to meet?</h6></div>
-                <span><input type="checkbox" id="unclassified" class="filter-input" name="filter-2"/><label for="unclassified" class="filter-label info-cui">Controlled Unclassified Information</label></span><br>
-                <span><input type="checkbox" id="ferpa" class="filter-input" name="filter-2"/><label for="ferpa" class="filter-label info-ferpa">FERPA</label></span><br>
-                <span><input type="checkbox" id="hippa" class="filter-input" name="filter-2"/><label for="hippa" class="filter-label info-hippa">HIPPA and/or Protected Health Information</label></span><br>
-                <span><input type="checkbox" id="pci" class="filter-input" name="filter-2"/><label for="pci" class="filter-label info-pci">Payment Card Information</label></span><br>
-                <span><input type="checkbox" id="other-compliance" class="filter-input" name="filter-2"/><label for="other-compliance" class="filter-label info-other">Other</label></span><br>
-            
+                <br>
+                <input type="checkbox" id="unclassified" class="filter-input" name="filter-2"/><label for="unclassified" class="filter-label info-cui">Controlled Unclassified Information</label><br>
+                <input type="checkbox" id="ferpa" class="filter-input" name="filter-2"/><label for="ferpa" class="filter-label info-ferpa">FERPA</label><br>
+                <input type="checkbox" id="hippa" class="filter-input" name="filter-2"/><label for="hippa" class="filter-label info-hippa">HIPPA and/or Protected Health Information</label><br>
+                <input type="checkbox" id="pci" class="filter-input" name="filter-2"/><label for="pci" class="filter-label info-pci">Payment Card Information</label><br>
+                <input type="checkbox" id="other-compliance" class="filter-input" name="filter-2"/><label for="other-compliance" class="filter-label info-other">Other</label><br>
+                <br>
+                
                 <div class="question"><h6>What functions does your data serve?</h6></div>
-                <span><input type="checkbox" id="active" class="filter-input" name="filter-2"/><label for="active" class="filter-label info-active">Active processing (creating, editing, computing)</label></span><br>
-                <span><input type="checkbox" id="collab" class="filter-input" name="filter-2"/><label for="collab" class="filter-label info-collab">Collaboration/Co-authoring</label></span><br>
-                <span><input type="checkbox" id="hpc" class="filter-input" name="filter-2"/><label for="hpc" class="filter-label info-hpc">High Performance Computing</label></span><br>
-                <span><input type="checkbox" id="ml" class="filter-input" name="filter-2"/><label for="ml" class="filter-label info-ml">Machine Learning</label></span><br>
-                <span><input type="checkbox" id="temp" class="filter-input" name="filter-2"/><label for="temp" class="filter-label info-temp">Temporary working/scratch space</label></span><br>
-                <span><input type="checkbox" id="archiving" class="filter-input" name="filter-2"/><label for="arch" class="filter-label info-arch">Arhciving inactive data</label></span><br>
-                <span><input type="checkbox" id="running-db" class="filter-input" name="filter-2"/><label for="run-db" class="filter-label info-run-db">Running database/application</label></span><br>
-                <span><input type="checkbox" id="multi" class="filter-input" name="filter-2"/><label for="mult" class="filter-label info-mult">Working with multimedia files</label></span><br>
-                <span><input type="checkbox" id="sharing-ext" class="filter-input" name="filter-2"/><label for="info-sharing-ext" class="filter-label info-sharing-ext">Sharing data externally with a web link</label></span><br>
-                <span><input type="checkbox" id="publish" class="filter-input" name="filter-2"/><label for="pub" class="filter-label info-pub">Publish data for a research data management plan</label></span><br>
-            
+                <br>
+                <input type="checkbox" id="active" class="filter-input" name="filter-2"/><label for="active" class="filter-label info-active">Active processing (creating, editing, computing)</label><br>
+                <input type="checkbox" id="collab" class="filter-input" name="filter-2"/><label for="collab" class="filter-label info-collab">Collaboration/Co-authoring</label><br>
+                <input type="checkbox" id="hpc" class="filter-input" name="filter-2"/><label for="hpc" class="filter-label info-hpc">High Performance Computing</label><br>
+                <input type="checkbox" id="ml" class="filter-input" name="filter-2"/><label for="ml" class="filter-label info-ml">Machine Learning</label><br>
+                <input type="checkbox" id="temp" class="filter-input" name="filter-2"/><label for="temp" class="filter-label info-temp">Temporary working/scratch space</label><br>
+                <input type="checkbox" id="archiving" class="filter-input" name="filter-2"/><label for="arch" class="filter-label info-arch">Arhciving inactive data</label><br>
+                <input type="checkbox" id="running-db" class="filter-input" name="filter-2"/><label for="run-db" class="filter-label info-run-db">Running database/application</label><br>
+                <input type="checkbox" id="multi" class="filter-input" name="filter-2"/><label for="mult" class="filter-label info-mult">Working with multimedia files</label><br>
+                <input type="checkbox" id="sharing-ext" class="filter-input" name="filter-2"/><label for="info-sharing-ext" class="filter-label info-sharing-ext">Sharing data externally with a web link</label><br>
+                <input type="checkbox" id="publish" class="filter-input" name="filter-2"/><label for="pub" class="filter-label info-pub">Publish data for a research data management plan</label><br>
+                <br>
+                
                 <div class="question"><h6>Does your data need to be highly available? (virtually no downtime?)</h6></div>
-                <span><input type="checkbox" id="no-avail" class="filter-input" name="filter-2"/><label for="no-avail" class="filter-label info-no-avail">No</label></span><br>
-                <span><input type="checkbox" id="yes-avail" class="filter-input" name="filter-2"/><label for="yes-avail" class="filter-label info-yes-avail">Yes</label></span><br>
-            
-                <div class="question"><h6>How do you share your data?</h6>
-                <span><input type="checkbox" id="sharing-2" class="filter-input" name="filter-2"/><label for="sharing-2" class="filter-label info-not-sharing">Not sharing</label></span><br>
-                <span><input type="checkbox" id="sharing2-2" class="filter-input" name="filter-2"/><label for="sharing2-2" class="filter-label info-nd-sharing">Only those at the University of Notre Dame</label></span><br>
-                <span><input type="checkbox" id="sharing3-2" class="filter-input" name="filter-2"/><label for="sharing3-2" class="filter-label info-both-sharing">Both those in and outside the University of Notre Dame</label></span><br>
-            
+                <br>
+                <input type="checkbox" id="no-avail" class="filter-input" name="filter-2"/><label for="no-avail" class="filter-label info-no-avail">No</label><br>
+                <input type="checkbox" id="yes-avail" class="filter-input" name="filter-2"/><label for="yes-avail" class="filter-label info-yes-avail">Yes</label><br>
+                <br>
+                
+                <div class="question"><h6>How do you share your data?</h6></div>
+                <br>
+                <input type="checkbox" id="sharing-2" class="filter-input" name="filter-2"/><label for="sharing-2" class="filter-label info-not-sharing">Not sharing</label><br>
+                <input type="checkbox" id="sharing2-2" class="filter-input" name="filter-2"/><label for="sharing2-2" class="filter-label info-nd-sharing">Only those at the University of Notre Dame</label><br>
+                <input type="checkbox" id="sharing3-2" class="filter-input" name="filter-2"/><label for="sharing3-2" class="filter-label info-both-sharing">Both those in and outside the University of Notre Dame</label><br>
+                <br>
+                
                 <div class="question"><h6>How much data do you have and how fast will it grow?</h6></div>
-                <span><input type="checkbox" id="nonexceeding" class="filter-input" name="filter-2"/><label for="nonexceeding" class="filter-label info-nonexceeding">Unlikely to exceed 1TB in 2 years</label></span><br>
-                <span><input type="checkbox" id="exceeding" class="filter-input" name="filter-2"/><label for="exceeding" class="filter-label info-exceeding">Greater than 1TB a growing more than 20% annually</label></span><br>
-            
+                <br>
+                <input type="checkbox" id="nonexceeding" class="filter-input" name="filter-2"/><label for="nonexceeding" class="filter-label info-nonexceeding">Unlikely to exceed 1TB in 2 years</label><br>
+                <input type="checkbox" id="exceeding" class="filter-input" name="filter-2"/><label for="exceeding" class="filter-label info-exceeding">Greater than 1TB a growing more than 20% annually</label><br>
+                <br>
+                
                 <div class="question"><h6>Do you wish to be able to recover data accidentally deleted in 3 months?</h6></div>
-                <span><input type="checkbox" id="yes-recover" class="filter-input" name="filter-2"/><label for="yes-recover" class="filter-label info-recover">Yes</label></span><br>
-                <span><input type="checkbox" id="no-recover" class="filter-input" name="filter-2"/><label for="no-recover" class="filter-label info-no-recover">No</label></span><br>
-            
+                <br>
+                <input type="checkbox" id="yes-recover" class="filter-input" name="filter-2"/><label for="yes-recover" class="filter-label info-recover">Yes</label><br>
+                <input type="checkbox" id="no-recover" class="filter-input" name="filter-2"/><label for="no-recover" class="filter-label info-no-recover">No</label><br>
+                <br>
+                
                 <div class="question"><h6>Do you have special performance needs?</h6></div>
-                <span><input type="checkbox" id="transaction-rate" class="filter-input" name="filter-2"/><label for="transaction-rate" class="filter-label info-">I need high transaction/trasnfer rates</label></span><br>
-                <span><input type="checkbox" id="file-amount" class="filter-input" name="filter-2"/><label for="file-amount" class="filter-label info-">I need to access a large number of files at the same time</label></span><br>
-            
+                <br>
+                <input type="checkbox" id="transaction-rate" class="filter-input" name="filter-2"/><label for="transaction-rate" class="filter-label info-">I need high transaction/trasnfer rates</label><br>
+                <input type="checkbox" id="file-amount" class="filter-input" name="filter-2"/><label for="file-amount" class="filter-label info-">I need to access a large number of files at the same time</label><br>
+                <br>
+                
                 <div class="question"><h6>Whose data are you looking to store?</h6></div>
-                <span><input type="checkbox" id="personal" class="filter-input" name="filter-2"/><label for="personal" class="filter-label info-personal">Data you create and use</label></span><br>
-                <span><input type="checkbox" id="project" class="filter-input" name="filter-2"/><label for="project" class="filter-label info-project">Project data</label></span><br>
-                <span><input type="checkbox" id="departmental" class="filter-input" name="filter-2"/><label for="departmental" class="filter-label info-departmental">Departmental/Group</label></span><br>
-                <span><input type="checkbox" id="external" class="filter-input" name="filter-2"/><label for="external" class="filter-label info-external">External</label></span><br>
+                <br>
+                <input type="checkbox" id="personal" class="filter-input" name="filter-2"/><label for="personal" class="filter-label info-personal">Data you create and use</label><br>
+                <input type="checkbox" id="project" class="filter-input" name="filter-2"/><label for="project" class="filter-label info-project">Project data</label><br>
+                <input type="checkbox" id="departmental" class="filter-input" name="filter-2"/><label for="departmental" class="filter-label info-departmental">Departmental/Group</label><br>
+                <input type="checkbox" id="external" class="filter-input" name="filter-2"/><label for="external" class="filter-label info-external">External</label><br>
                 <br>
                 </div>
             </span>
@@ -325,7 +322,7 @@
                         exceeding
                         project external">
                     <span style="padding-right:3px; padding-top: 3px;">
-                    <img class="logo" src="0ndstudios-logo.png">
+                    <img class="logo" src="https://www.pngkit.com/png/full/725-7258153_notre-dame-logo-notre-dame-logo-ohio-state.png">
                     </span>
                     <h4>ND Studios SAN</h4>
                     <p>Nearline storage for media content</p>
@@ -510,39 +507,8 @@
       </main>
       <div class="page-sidebar">
         <!-- Full Nav -->
-        <nav id="nav" class="nav-site nav-full" role="navigation" aria-label="Primary navigation">
-          <ul class="depth_1">
-            <li class="active"><a href="#">Page A</a>
-              <ul class="depth_2">
-                <li><a href="#">Subpage A</a></li>
-                <!-- Current Page -->
-                <li class="active"><a class="current" href="#">Subpage B</a>
-                  <ul class="nav-level-2 depth_3">
-                    <li><a href="#">Child Page A</a></li>
-                    <li><a href="#">Child Page B</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Subpage C</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Page B</a></li>
-            <li><a href="#">Page C</a></li>
-          </ul>
-        </nav>
+    
         <!-- Current section nav -->
-        <nav class="nav-section nav-site" role="navigation" aria-label="Section navigation">
-          <ul class="depth_2">
-            <li><a href="#">Subpage A</a></li>
-            <!-- Current Page -->
-            <li class="active"><a href="#" class="current">Subpage B</a>
-              <ul class="nav-level-2 depth_3">
-                <li><a href="#">Child Page A</a></li>
-                <li><a href="#">Child Page B</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Subpage C</a></li>
-          </ul>
-        </nav>
       </div>
     </div>
     <!-- Site Footer -->
@@ -608,7 +574,6 @@
       </div>
     </footer>
   </div><!-- .wrapper -->
-  <!--ELLIE JAVASCRIPT CODE--> 
   <script src="https://conductor.nd.edu/javascripts/themes/ndt/v3/ndt.js"></script>
   <script src="./javascripts/readyforpublish.js"></script>
 </body>
